@@ -39,8 +39,7 @@ This guide demonstrates how to create a secure S3 bucket with CloudTrail logging
 4. Select Amazon S3-managed keys (SSE-S3)
 5. Click Save changes
 
-![Enable Encryption](images/enable-encryption.png)
-*Figure 2: Enabling encryption for S3 bucket*
+
 
 ## Step 3: Configure CloudTrail Logging
 1. Open CloudTrail Console
@@ -51,8 +50,7 @@ This guide demonstrates how to create a secure S3 bucket with CloudTrail logging
 6. Configure log file validation
 7. Review and create
 
-![CloudTrail Configuration](images/cloudtrail-config.png)
-*Figure 3: Configuring CloudTrail logging*
+
 
 ## Step 4: Create IAM Policy
 1. Go to IAM → Policies
