@@ -30,7 +30,7 @@ This guide demonstrates how to create a secure S3 bucket with CloudTrail logging
    - Select Enable
 7. Click Create Bucket
 
-![S3 Bucket Creation](images/s3-bucket-creation.png)
+![S3 Bucket Creation](Screenshot 2025-01-31 at 1.00.51 PM)
 *Figure 1: Creating a secure S3 bucket*
 
 ## Step 2: Enable Encryption
