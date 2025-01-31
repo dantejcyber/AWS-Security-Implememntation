@@ -1,42 +1,92 @@
-# AWS-Security-Implememntation
-AWS-IAM-and-Logging
 # Secure S3 Bucket Setup with CloudTrail Logging
 
-This project demonstrates how to create a secure S3 bucket with CloudTrail logging in AWS, emphasizing best practices for data security and access monitoring.
-
-## Overview
-
-This repository contains documentation on setting up a secure S3 bucket with enhanced security features and CloudTrail logging. The setup includes:
-
-- Creating a secure S3 bucket
-- Enabling server-side encryption
-- Implementing CloudTrail logging
-- Configuring an IAM policy to restrict access
+This guide demonstrates how to create a secure S3 bucket with CloudTrail logging in AWS, emphasizing best practices for data security and access monitoring.
 
 ## Table of Contents
-
-1. [Prerequisites](#prerequisites)
-2. [Setup Steps](#setup-steps)
-3. [Security Features](#security-features)
-4. [Testing](#testing)
-5. [Contributing](#contributing)
-6. [License](#license)
+- [Prerequisites](#prerequisites)
+- [Step 1: Create a Secure S3 Bucket](#step-1-create-a-secure-s3-bucket)
+- [Step 2: Enable Encryption](#step-2-enable-encryption)
+- [Step 3: Configure CloudTrail Logging](#step-3-configure-cloudtrail-logging)
+- [Step 4: Create IAM Policy](#step-4-create-iam-policy)
+- [Security Best Practices](#security-best-practices)
+- [Troubleshooting](#troubleshooting)
+- [Monitoring](#monitoring)
 
 ## Prerequisites
+- AWS Account
+- AWS Management Console access
+- Basic cloud security knowledge
 
-- An AWS account with appropriate permissions
-- Access to AWS Management Console
-- Basic understanding of AWS services (S3, IAM, CloudTrail)
+## Step 1: Create a Secure S3 Bucket
+1. Go to AWS Console → S3
+2. Click Create bucket
+3. Set a unique bucket name (e.g., secure-bucket-1234)
+4. Choose a region (e.g., us-east-1)
+5. Disable public access:
+   - Check Block all public access
+   - Click Confirm
+6. Enable Bucket Versioning:
+   - Scroll to Bucket Versioning
+   - Select Enable
+7. Click Create Bucket
 
-## Setup Steps
+![S3 Bucket Creation](images/s3-bucket-creation.png)
+*Figure 1: Creating a secure S3 bucket*
 
-Detailed steps for setting up the secure S3 bucket and CloudTrail logging can be found in the [setup_guide.md](setup_guide.md) file.
+## Step 2: Enable Encryption
+1. Go to S3 → Click your secure bucket
+2. Click Properties
+3. Scroll to Default encryption
+4. Select Amazon S3-managed keys (SSE-S3)
+5. Click Save changes
 
-## Security Features
+![Enable Encryption](images/enable-encryption.png)
+*Figure 2: Enabling encryption for S3 bucket*
 
-This project implements several security best practices:
+## Step 3: Configure CloudTrail Logging
+1. Open CloudTrail Console
+2. Click "Create trail"
+3. Name your trail
+4. Choose S3 bucket for log storage
+5. Select management and data events
+6. Configure log file validation
+7. Review and create
 
-- Bucket versioning for data protection
-- Server-side encryption using Amazon S3-managed keys (SSE-S3)
-- CloudTrail logging for comprehensive activity monitoring
-- IAM policy to enforce HTTPS-only access
+![CloudTrail Configuration](images/cloudtrail-config.png)
+*Figure 3: Configuring CloudTrail logging*
+
+## Step 4: Create IAM Policy
+1. Go to IAM → Policies
+2. Click Create policy
+3. Use JSON editor
+4. Paste restrictive policy
+5. Name policy
+6. Save policy
+
+![IAM Policy Creation](images/iam-policy-creation.png)
+*Figure 4: Creating IAM policy*
+
+## Security Best Practices
+- Use strong, unique bucket names
+- Enable encryption
+- Restrict public access
+- Regularly review CloudTrail logs
+- Implement principle of least privilege
+
+![Security Best Practices](images/security-best-practices.png)
+*Figure 5: Overview of security best practices*
+
+## Troubleshooting
+- Verify IAM permissions
+- Check network configurations
+- Review CloudTrail for access issues
+
+## Monitoring
+- Regularly check CloudTrail logs
+- Set up CloudWatch alerts
+- Review access patterns
+
+![Monitoring Dashboard](images/monitoring-dashboard.png)
+*Figure 6: Example of a monitoring dashboard*
+
+
