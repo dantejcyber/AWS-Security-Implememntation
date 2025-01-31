@@ -30,8 +30,7 @@ This guide demonstrates how to create a secure S3 bucket with CloudTrail logging
    - Select Enable
 7. Click Create Bucket
 
-![S3 Bucket Creation](Screenshot 2025-01-31 at 1.00.51 PM)
-*Figure 1: Creating a secure S3 bucket*
+
 
 ## Step 2: Enable Encryption
 1. Go to S3 → Click your secure bucket
@@ -63,8 +62,6 @@ This guide demonstrates how to create a secure S3 bucket with CloudTrail logging
 5. Name policy
 6. Save policy
 
-![IAM Policy Creation](images/iam-policy-creation.png)
-*Figure 4: Creating IAM policy*
 
 ## Security Best Practices
 - Use strong, unique bucket names
@@ -72,9 +69,6 @@ This guide demonstrates how to create a secure S3 bucket with CloudTrail logging
 - Restrict public access
 - Regularly review CloudTrail logs
 - Implement principle of least privilege
-
-![Security Best Practices](images/security-best-practices.png)
-*Figure 5: Overview of security best practices*
 
 ## Troubleshooting
 - Verify IAM permissions
@@ -86,7 +80,6 @@ This guide demonstrates how to create a secure S3 bucket with CloudTrail logging
 - Set up CloudWatch alerts
 - Review access patterns
 
-![Monitoring Dashboard](images/monitoring-dashboard.png)
-*Figure 6: Example of a monitoring dashboard*
+
 
 
